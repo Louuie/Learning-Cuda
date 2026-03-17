@@ -1,5 +1,5 @@
-#include "include/matrix_mul.cuh"
-#include "include/vector_add.cuh"
+#include "vector_addition.cuh"
+#include "matrix_multiplication.cuh"
 #include <cuda_runtime.h>
 #include <iostream>
 #include <vector>

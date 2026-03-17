@@ -7,7 +7,11 @@ set(CMAKE_CUDA_FLAGS "-arch=sm_121")
 
 enable_language(CUDA)
 
-add_executable(CUDA_Development main.cu)
+add_executable(CUDA_Development src/matrix_multiplication.cu src/vector_addition.cu
+        include/vector_add.cuh
+        include/matrix_mul.cuh
+        main.cu
+)
 
 set_target_properties(CUDA_Development PROPERTIES
         CUDA_SEPARABLE_COMPILATION ON)
